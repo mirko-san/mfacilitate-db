@@ -1,0 +1,15 @@
+{
+  "imports": {
+    "denodb": "https://deno.land/x/denodb@v1.4.0/mod.ts",
+    // START: denodb が動かないので追加
+    "https://deno.land/std/node/util.ts": "node:util",
+    "https://deno.land/std/node/events.ts": "node:events",
+    "https://deno.land/std/node/assert.ts": "node:assert",
+    "https://deno.land/std/node/url.ts": "node:url",
+    "https://deno.land/std/node/stream.ts": "node:stream"
+    // END: denodb が動かないので追加
+  },
+  "tasks": {
+    "start": "deno run --allow-env --allow-net src/mod.ts"
+  }
+}
